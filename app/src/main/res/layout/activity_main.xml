@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="731dp">
+
+        <LinearLayout
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/b17"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:text="得分"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/b18"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:text="失分"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/b19"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:text="失誤得分"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/b20"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:text="成功"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/b21"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:text="失誤"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/b22"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:text="無效"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/act"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/b1"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:text="發球"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/b2"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:text="接球"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/b3"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:text="舉球"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/b4"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:text="處理"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/b5"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:text="吊球"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/b6"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:text="扣球"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/b7"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:text="攔網"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/b8"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:text="其他"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/b9"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:text="先發一"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/b10"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:text="先發二"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/b11"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:text="先發三"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/b12"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:text="先發四"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/b13"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:text="先發五"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/b14"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:text="先發六"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/b15"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:text="候補一"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/b16"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:text="候補二"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
