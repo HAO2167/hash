@@ -34,7 +34,8 @@
                     android:layout_height="80dp"
                     android:layout_weight="1"
                     android:text="得分"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="point1"/>
 
                 <Button
                     android:id="@+id/b18"
@@ -42,7 +43,8 @@
                     android:layout_height="80dp"
                     android:layout_weight="1"
                     android:text="失分"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="point2"/>
 
                 <Button
                     android:id="@+id/b19"
@@ -50,7 +52,8 @@
                     android:layout_height="80dp"
                     android:layout_weight="1"
                     android:text="失誤得分"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:onClick="point3"/>
             </LinearLayout>
 
             <LinearLayout
@@ -64,7 +67,8 @@
                     android:layout_height="80dp"
                     android:layout_weight="1"
                     android:text="成功"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="point4"/>
 
                 <Button
                     android:id="@+id/b21"
@@ -72,7 +76,8 @@
                     android:layout_height="80dp"
                     android:layout_weight="1"
                     android:text="失誤"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="point5"/>
 
                 <Button
                     android:id="@+id/b22"
@@ -80,7 +85,8 @@
                     android:layout_height="80dp"
                     android:layout_weight="1"
                     android:text="無效"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="point6"/>
             </LinearLayout>
 
         </LinearLayout>
@@ -94,22 +100,23 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content">
 
                 <Button
-                    android:id="@+id/b1"
+                    android:id="@+id/l1"
                     android:layout_width="100dp"
                     android:layout_height="80dp"
                     android:text="發球"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="action1"/>
 
                 <Button
-                    android:id="@+id/b2"
+                    android:id="@+id/l2"
                     android:layout_width="100dp"
                     android:layout_height="80dp"
                     android:text="接球"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="action2"/>
             </LinearLayout>
 
             <LinearLayout
@@ -118,18 +125,20 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/b3"
+                    android:id="@+id/l3"
                     android:layout_width="100dp"
                     android:layout_height="80dp"
                     android:text="舉球"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="action3"/>
 
                 <Button
-                    android:id="@+id/b4"
+                    android:id="@+id/l4"
                     android:layout_width="100dp"
                     android:layout_height="80dp"
                     android:text="處理"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="action4"/>
             </LinearLayout>
 
             <LinearLayout
@@ -138,18 +147,20 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/b5"
+                    android:id="@+id/L5"
                     android:layout_width="100dp"
                     android:layout_height="80dp"
                     android:text="吊球"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="action5" />
 
                 <Button
                     android:id="@+id/b6"
                     android:layout_width="100dp"
                     android:layout_height="80dp"
                     android:text="扣球"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="action6"/>
             </LinearLayout>
 
             <LinearLayout
@@ -162,14 +173,17 @@
                     android:layout_width="100dp"
                     android:layout_height="80dp"
                     android:text="攔網"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="action7"/>
 
                 <Button
                     android:id="@+id/b8"
                     android:layout_width="100dp"
                     android:layout_height="80dp"
                     android:text="其他"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="action8"/>
+
             </LinearLayout>
 
         </LinearLayout>
@@ -191,14 +205,16 @@
                     android:layout_width="100dp"
                     android:layout_height="80dp"
                     android:text="先發一"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="person1"/>
 
                 <Button
                     android:id="@+id/b10"
                     android:layout_width="100dp"
                     android:layout_height="80dp"
                     android:text="先發二"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="person2"/>
             </LinearLayout>
 
             <LinearLayout
@@ -211,14 +227,16 @@
                     android:layout_width="100dp"
                     android:layout_height="80dp"
                     android:text="先發三"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="person3"/>
 
                 <Button
                     android:id="@+id/b12"
                     android:layout_width="100dp"
                     android:layout_height="80dp"
                     android:text="先發四"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="person4"/>
             </LinearLayout>
 
             <LinearLayout
@@ -231,14 +249,16 @@
                     android:layout_width="100dp"
                     android:layout_height="80dp"
                     android:text="先發五"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="person5"/>
 
                 <Button
                     android:id="@+id/b14"
                     android:layout_width="100dp"
                     android:layout_height="80dp"
                     android:text="先發六"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="person6"/>
             </LinearLayout>
 
             <LinearLayout
@@ -251,14 +271,17 @@
                     android:layout_width="100dp"
                     android:layout_height="80dp"
                     android:text="候補一"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="person7"/>
 
                 <Button
                     android:id="@+id/b16"
                     android:layout_width="100dp"
                     android:layout_height="80dp"
                     android:text="候補二"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+
+                    android:onClick="finish"/>
             </LinearLayout>
 
         </LinearLayout>
