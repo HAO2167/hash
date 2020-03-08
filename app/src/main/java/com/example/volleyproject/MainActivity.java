@@ -11,6 +11,7 @@ import android.os.Build;
 import android.os.Bundle;
 
 import android.os.Environment;
+import android.os.StrictMode;
 import android.util.Log;
 import android.view.View;
 
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     JSONArray JArray = new JSONArray();
     JSONObject Jobject = new JSONObject();
-    JSONObject game = new JSONObject();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -277,6 +278,20 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /* Android 4.0 以上的動態要求
+    StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder()
+            .detectDiskReads()
+    .detectDiskWrites()
+    .detectNetwork() // or .detectAll() for all detectable problems
+    .penaltyLog()
+    .build());
+    StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder()
+            .detectLeakedSqlLiteObjects()
+    .detectLeakedClosableObjects()
+    .penaltyLog()
+    .penaltyDeath()
+    .build());
+     */
 }
 
 
